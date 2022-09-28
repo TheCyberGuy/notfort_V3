@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
-    <div className="pb-8">
+    <div id="home" className="pb-8">
       <div className="flex flex-col md:flex-row pt-20 justify-evenly items-center w-screen h-[47.5rem]">
         <div className="flex flex-col md:items-start flex-1 items-center mx-2 md:mx-0 gap-1">
           <h2 className="text-3xl text-center mx-auto">
@@ -31,7 +31,7 @@ const Landing = () => {
             More About Us
           </motion.button>
         </div>
-        <div className="relative  w-[75%] h-[75%] lg:w-[50%] lg:h-[50%]">
+        <div className="relative -z-10  w-[75%] h-[75%] lg:w-[50%] lg:h-[50%]">
           <Image
             src={Coding}
             alt="Coding Illustration"

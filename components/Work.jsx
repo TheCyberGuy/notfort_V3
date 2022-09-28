@@ -9,7 +9,10 @@ import { useState } from "react";
 const Work = () => {
   const [us, setUs] = useState(false);
   return (
-    <div className="bg-black w-screen lg:h-[30rem] h-[86rem] flex flex-col md:flex-row justify-evenly items-center">
+    <div
+      id="work"
+      className="bg-black w-screen lg:h-[30rem] h-[86rem] flex relative  flex-col md:flex-row justify-evenly items-center"
+    >
       <div className="mx-5 flex-1 pb-12">
         <h3 className="text-white text-center text-5xl py-6">Our Work</h3>
         <p className="text-white mx-auto md:w-[75%] w-[90%] text-center lg:hover:scale-110 duration-300 ease-in-out">
@@ -27,7 +30,7 @@ const Work = () => {
         </p>
       </div>
       <div className="flex-col items-center justify-evenly flex-1">
-        <div className="bg-white h-[60%] mx-auto w-[75%] rounded-lg flex flex-col">
+        <div className="bg-white  relative h-[60%] mx-auto w-[75%] rounded-lg flex flex-col">
           <motion.div
             style={{ flexDirection: "column" }}
             animate={{
@@ -73,7 +76,7 @@ const Work = () => {
             </div>
           </motion.div>
         </div>
-        <div>
+        <div className="relative z-10">
           <motion.div
             className="w-[64px] mx-auto pt-4 h-[64px]"
             animate={{

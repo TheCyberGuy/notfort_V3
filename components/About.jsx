@@ -30,7 +30,10 @@ const About = () => {
   const [pos, setPos] = useState(2);
   return (
     <>
-      <div className="bg-white w-screen h-[67rem] md:h-[45rem] flex flex-col justify-centera items-center">
+      <div
+        id="about"
+        className="bg-white w-screen h-[67rem] md:h-[45rem] flex flex-col justify-centera items-center"
+      >
         <div className="my-6">
           <h2 className="text-black text-5xl text-center pb-16">How We Work</h2>
         </div>
