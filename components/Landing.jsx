@@ -7,20 +7,22 @@ const Landing = () => {
   return (
     <div className="pb-8">
       <div className="flex flex-col md:flex-row justify-evenly items-center w-screen h-[47.5rem]">
-        <div className="flex flex-col md:items-start items-center mx-2 md:mx-0 gap-1">
-          <h2 className="text-3xl text-center md:text-start">
+        <div className="flex flex-col md:items-start flex-1 items-center mx-2 md:mx-0 gap-1">
+          <h2 className="text-3xl text-center mx-auto">
             Making Your Business
-            <span className="font-semibold">
+            <span className="font-semibold mx-auto">
               <br />
               Come True
             </span>
           </h2>
-          <p className="font-extralight text-center md:text-start md:w-[55%] w-[65%]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            impedit ea corrupti nulla illum.
+          <p className="font-extralight text-center text-xl mx-auto md:text-start md:w-[45%] w-[65%]">
+            Notfort is here to help you achieve your dream business. We can put
+            your business online and help you reach more customers. We offer web
+            design and development services that will help you get started.
+            Contact us today to get started!
           </p>
           <motion.button
-            className="bg-black w-max text-white mt-2 rounded-lg p-2 "
+            className="bg-black w-max text-white mt-2 rounded-lg p-2 mx-auto"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.1 }}
             onHoverStart={(e) => {}}
@@ -29,7 +31,7 @@ const Landing = () => {
             More About Us
           </motion.button>
         </div>
-        <div className="relative -z-10">
+        <div className="relative -z-10 w-[35%]">
           <Image
             src={Coding}
             alt="Coding Illustration"

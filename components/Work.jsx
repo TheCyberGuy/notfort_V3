@@ -9,10 +9,10 @@ import { useState } from "react";
 const Work = () => {
   const [us, setUs] = useState(false);
   return (
-    <div className="bg-black w-screen lg:h-[30rem] h-[55rem] flex flex-col md:flex-row justify-evenly items-center">
+    <div className="bg-black w-screen lg:h-[30rem] h-[86rem] flex flex-col md:flex-row justify-evenly items-center">
       <div className="mx-5 flex-1 pb-12">
-        <h3 className="text-white text-center text-5xl pb-4">Our Work</h3>
-        <p className="text-white mx-auto w-[75%] text-center hover:scale-110 duration-300 ease-in-out">
+        <h3 className="text-white text-center text-5xl py-6">Our Work</h3>
+        <p className="text-white mx-auto md:w-[75%] w-[90%] text-center lg:hover:scale-110 duration-300 ease-in-out">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque iste
           ab maiores fuga natus pariatur provident, atque dolor eius!
           Exercitationem ducimus modi aut ratione vel facilis velit quod autem
