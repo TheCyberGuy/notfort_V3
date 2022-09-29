@@ -6,8 +6,16 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   const textVariants = {
-    hidden: { opacity: 0, display: "none", x: "-200vw" },
-    visible: { opacity: 1, display: "block", x: 0 },
+    hidden: {
+      opacity: 0,
+      display: "none",
+      x: "-200vw",
+    },
+    visible: {
+      opacity: 1,
+      display: "block",
+      x: 0,
+    },
   };
   const socialVariants = {
     hidden: { opacity: 0, display: "none", x: "200vw" },
@@ -18,10 +26,10 @@ const Contact = () => {
   return (
     <>
       <div
-        id="contact"
+        id="contact, "
         className="w-screen h-[25rem] bg-black flex flex-col justify-center  items-center gap-24"
       >
-        <motion.div className="flex">
+        <motion.div className="flex h-[40px]">
           <motion.h3
             className="text-white text-4xl"
             variants={textVariants}

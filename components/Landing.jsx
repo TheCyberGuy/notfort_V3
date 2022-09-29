@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Coding from "../assets/coding.svg";
-import Card from "./Card";
+import Head from "next/head";
 import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
     <div id="home" className="pb-8">
+      <Head>
+        <link rel="preload" href={Coding} as="image" />
+      </Head>
       <div className="flex flex-col md:flex-row pt-20 justify-evenly items-center w-screen h-[47.5rem]">
         <div className="flex flex-col md:items-start flex-1 items-center mx-2 md:mx-0 gap-1">
           <h2 className="text-3xl text-center mx-auto">

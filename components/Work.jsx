@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Head from "next/head";
 import Adam from "../assets/adam.jpg";
 import Csanad from "../assets/csanad.jpg";
 import Startup from "../assets/annie-spratt-QckxruozjRg-unsplash.jpg";
@@ -13,6 +13,9 @@ const Work = () => {
       id="work"
       className="bg-black w-screen lg:h-[30rem] h-[86rem] flex relative  flex-col md:flex-row justify-evenly items-center"
     >
+      <Head>
+        <link rel="preload" href={[Adam, Csanad, Startup]} as="image" />
+      </Head>
       <div className="mx-5 flex-1 pb-12">
         <h3 className="text-white text-center text-5xl py-6">Our Work</h3>
         <p className="text-white mx-auto md:w-[75%] w-[90%] text-center lg:hover:scale-110 duration-300 ease-in-out">

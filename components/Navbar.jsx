@@ -10,8 +10,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
     <nav className="w-screen px-4 bg-black flex h-full sticky z-50 top-0 justify-between items-center">
-      <div className="mb-1">
-        <Image src={Logo} alt="notfort Logo" width={132} height={132} />
+      <div className="mb-1 ">
+        <Image
+          className=""
+          src={Logo}
+          alt="notfort Logo"
+          width={132}
+          height={132}
+        />
       </div>
       <div className="text-white text-xl md:block hidden">
         <ul className="flex justify-evenly gap-4">

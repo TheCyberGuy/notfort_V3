@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
 import Work from "../components/Work";
-
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -21,6 +21,7 @@ export default function Home() {
       <Work />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
